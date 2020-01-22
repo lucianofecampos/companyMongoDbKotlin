@@ -121,4 +121,4 @@ gradlew
 gradlew.bat
 src/main/resources/static/
 src/main/resources/templates/
-!/companymongodbkotlin.iml
+/companymongodbkotlin.iml

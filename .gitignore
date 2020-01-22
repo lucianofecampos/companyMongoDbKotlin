@@ -112,3 +112,12 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/sonarlint/
+.idea/vcs.xml
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+src/main/resources/static/
+src/main/resources/templates/

@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.MongoRepository
 
 interface CompanyRepository : MongoRepository<Company, String> {
 
-    fun findByCpnj(): Company
+    fun findByCpnj(cnpj: String): Company
 }

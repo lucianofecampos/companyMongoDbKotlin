@@ -6,17 +6,19 @@ import com.lucianocampos.companymongodbkotlin.service.CompanyService
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import org.mockito.BDDMockito
 import org.mockito.BDDMockito.given
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.boot.test.mock.mockito.MockBean
 
 @SpringBootTest
 internal class CompanyServiceImplTest {
 
     @Autowired
     val companyService: CompanyService? = null
-    val companyRepository: CompanyRepository? = null
+
+    @MockBean
+    private val companyRepository: CompanyRepository? = null
 
     private val cnpj = "51463645000100"
     private val company = Company("Name", cnpj, "1")
